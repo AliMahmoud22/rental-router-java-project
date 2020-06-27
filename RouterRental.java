@@ -616,9 +616,12 @@ private final String Customer_name;
 /** this is an exception class that works when user enter the number of an service that doesn't exist
  */
 class wrong_number extends Exception{
-/**this is the constructor of the own defined exception class 
- * @param string take the string that allow the method to be executed
- */
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * this is the constructor of the own defined exception class
+     * @param string take the string that allow the method to be executed
+     */
     public wrong_number(String string) {
         super(string);
     }
